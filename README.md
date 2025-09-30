@@ -25,6 +25,19 @@ The HDBSCAN algorithm was chosen for its ability to handle complex, non-linear d
 clusters of varying densities and shapes, and its robustness against noise, making it ideal for 
 climatological data.
 
+## Getting started
+A ready-to-go virtual environment can be set up with pyproject.toml
+
+Requires-python >=3.12
+
+Dependencies:
+- geopandas (>=1.1.1,<2.0.0)
+- rasterio (>=1.4.3,<2.0.0)
+- scikit-learn (>=1.7.2,<2.0.0)
+- hdbscan (>=0.8.40,<0.9.0)
+- matplotlib (>=3.10.6,<4.0.0)
+- seaborn (>=0.13.2,<0.14.0)
+
 ## Data
 The workflow can be run with the data you find in the data directory.
 Use the feature_stack.tif file for run the clustering algorithm.
