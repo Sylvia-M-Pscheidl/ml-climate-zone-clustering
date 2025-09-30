@@ -1,2 +1,6 @@
 environment_test.py
 .idea/
+data_testing
+explore_data.py
+raster_clip.py
+classes_cluster_plots.py
