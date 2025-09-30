@@ -25,20 +25,15 @@ The HDBSCAN algorithm was chosen for its ability to handle complex, non-linear d
 clusters of varying densities and shapes, and its robustness against noise, making it ideal for 
 climatological data.
 
-## Features
-Data Preparation: Reads and processes multi-band geospatial raster data, handling NoData values 
-and preparing it for machine learning.
-
-Unsupervised Clustering: Implements the HDBSCAN algorithm to find density-based clusters in the 
-climate data.
-
-Geospatial Output: Saves the final cluster labels back into a GeoTIFF file, preserving the original 
-spatial reference.
-
-Comprehensive Evaluation: Provides a script to compare the clustering results against a ground-truth 
-raster (e.g., Köppen-Geiger map).
-
-Performance Metrics: Automatically generates and displays a confusion matrix, a classification report (Precision, Recall, F1-Score), and the Area Under the Curve (AUC) score.
+## Data
+The workflow can be run with the data you find in the data directory.
+Use the feature_stack.tif file for run the clustering algorithm.
+Your result can be stacked with the koppen_geiger_reclass.tif for evaluation.
+An example for a cluster result produced by the presented pipline can be found 
+in evaluation_stack.tif. Band 1 holds the reference data from the Köppen-Geiger map,
+band 2 are the resulting classes.
+If you want to use your own climate variables, you can stack your GeoTIFF files
+with the raster_stack.py script.
 
 ## Usage
 The workflow is divided into multiple steps. Use the scripts to run the clustering pipeline.
